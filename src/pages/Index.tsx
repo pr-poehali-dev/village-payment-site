@@ -64,7 +64,6 @@ const Index = () => {
             <Card id="payment" className="backdrop-blur-md bg-white/95 shadow-2xl animate-scale-in border-2 border-primary/20">
               <CardHeader>
                 <CardTitle className="text-3xl">Оформить платеж</CardTitle>
-                <CardDescription>Введите данные карты для оплаты</CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handlePayment} className="space-y-4">
