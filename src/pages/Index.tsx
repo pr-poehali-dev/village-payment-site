@@ -46,7 +46,6 @@ const Index = () => {
             <div className="hidden md:flex items-center gap-6 text-white">
               <a href="#home" className="hover:text-primary transition-colors">Главная</a>
               <a href="#payment" className="hover:text-primary transition-colors">Оплата</a>
-              <a href="#security" className="hover:text-primary transition-colors">Безопасность</a>
             </div>
           </div>
         </nav>
@@ -55,25 +54,11 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center w-full">
             <div className="text-white space-y-6 animate-fade-in">
               <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-                Безопасные платежи для вашего дома
+                Платежи для вашего дома
               </h1>
               <p className="text-xl text-white/90">
-                Принимаем платежи с любых банковских карт. Быстро, надежно и безопасно.
+                Принимаем платежи с любых банковских карт.
               </p>
-              <div className="flex flex-wrap gap-4 pt-4">
-                <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
-                  <Icon name="CreditCard" size={20} />
-                  <span>Visa / MasterCard</span>
-                </div>
-                <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
-                  <Icon name="Shield" size={20} />
-                  <span>100% защита</span>
-                </div>
-                <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
-                  <Icon name="CheckCircle" size={20} />
-                  <span>Мгновенно</span>
-                </div>
-              </div>
             </div>
 
             <Card id="payment" className="backdrop-blur-md bg-white/95 shadow-2xl animate-scale-in border-2 border-primary/20">
@@ -157,58 +142,9 @@ const Index = () => {
           </div>
         </section>
 
-        <section id="security" className="bg-white/95 backdrop-blur-md py-20">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-12">Почему нам доверяют</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="text-center hover-scale transition-all duration-300 border-2 hover:border-primary/50">
-                <CardHeader>
-                  <div className="mx-auto mb-4 w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full">
-                    <Icon name="CreditCard" size={32} className="text-primary" />
-                  </div>
-                  <CardTitle>Любые карты</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Принимаем Visa, MasterCard, МИР и другие платежные системы
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="text-center hover-scale transition-all duration-300 border-2 hover:border-primary/50">
-                <CardHeader>
-                  <div className="mx-auto mb-4 w-16 h-16 flex items-center justify-center bg-secondary/10 rounded-full">
-                    <Icon name="CheckCircle" size={32} className="text-secondary" />
-                  </div>
-                  <CardTitle>Мгновенная обработка</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Платежи обрабатываются в режиме реального времени
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="text-center hover-scale transition-all duration-300 border-2 hover:border-primary/50">
-                <CardHeader>
-                  <div className="mx-auto mb-4 w-16 h-16 flex items-center justify-center bg-accent/10 rounded-full">
-                    <Icon name="Shield" size={32} className="text-accent" />
-                  </div>
-                  <CardTitle>Полная безопасность</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Защита данных по стандартам PCI DSS и SSL шифрование
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
         <footer className="bg-primary text-primary-foreground py-8">
           <div className="container mx-auto px-4 text-center">
-            <p className="text-sm">© 2024 Village House Payment. Все платежи защищены</p>
+            <p className="text-sm">© 2024 Village House Payment</p>
           </div>
         </footer>
       </div>
