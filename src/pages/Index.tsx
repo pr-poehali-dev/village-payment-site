@@ -54,7 +54,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center w-full">
             <div className="text-white space-y-6 animate-fade-in">
               <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-                Платежи для вашего дома
+                Платежи для дома
               </h1>
               <p className="text-xl text-white/90">
                 Принимаем платежи с любых банковских карт.
